@@ -93,7 +93,7 @@ const ContactSection: React.FC = () => {
                 <div>
                   <h3 className="text-lg font-semibold text-neutral-900 dark:text-white mb-1">Phone</h3>
                   <a 
-                    href="tel:+6699779557" 
+                    href="tel:+16699779557" 
                     className="text-neutral-600 dark:text-neutral-400 hover:text-primary dark:hover:text-primary-light"
                   >
                     +1 (669) 977-9557
