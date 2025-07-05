@@ -1,11 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
+  output: 'export',
   images: {
     domains: ['images.pexels.com', 'via.placeholder.com'],
+    unoptimized: true,
   },
 }
 
-module.exports = nextConfig
+module.exports = nextConfig;

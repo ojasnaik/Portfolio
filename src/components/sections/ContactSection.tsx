@@ -1,8 +1,10 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { Mail, MapPin, Phone, Send, CheckCircle, AlertCircle } from 'lucide-react'
 import { config } from '@/lib/config'
+
+const PAGECLIP_ENDPOINT = "https://send.pageclip.co/EYBS2o1KUM6lnVRgltswixebomMl9g6M";
 
 const ContactSection: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -11,8 +13,9 @@ const ContactSection: React.FC = () => {
     subject: '',
     message: ''
   })
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success'>('idle')
+  const formRef = useRef<HTMLFormElement>(null)
+  const [submitting, setSubmitting] = useState(false)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -21,30 +24,16 @@ const ContactSection: React.FC = () => {
     })
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    setSubmitStatus('idle')
+  const handleFormSubmit = () => {
+    setSubmitting(true)
+  }
 
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      })
-
-      if (response.ok) {
-        setSubmitStatus('success')
-        setFormData({ name: '', email: '', subject: '', message: '' })
-      } else {
-        setSubmitStatus('error')
-      }
-    } catch (error) {
-      setSubmitStatus('error')
-    } finally {
-      setIsSubmitting(false)
+  const handleIframeLoad = () => {
+    if (submitting) {
+      setSubmitStatus('success')
+      setFormData({ name: '', email: '', subject: '', message: '' })
+      setSubmitting(false)
+      if (formRef.current) formRef.current.reset()
     }
   }
 
@@ -149,7 +138,6 @@ const ContactSection: React.FC = () => {
               <h2 className="text-2xl font-bold text-neutral-900 dark:text-white mb-6">
                 Send a Message
               </h2>
-
               {submitStatus === 'success' && (
                 <div className="mb-6 p-4 bg-green-500/10 border border-green-500/20 rounded-lg flex items-center">
                   <CheckCircle size={20} className="text-green-500 mr-2" />
@@ -158,17 +146,14 @@ const ContactSection: React.FC = () => {
                   </span>
                 </div>
               )}
-
-              {submitStatus === 'error' && (
-                <div className="mb-6 p-4 bg-red-500/10 border border-red-500/20 rounded-lg flex items-center">
-                  <AlertCircle size={20} className="text-red-500 mr-2" />
-                  <span className="text-red-700 dark:text-red-300">
-                    Failed to send message. Please try again or email me directly.
-                  </span>
-                </div>
-              )}
-
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form
+                ref={formRef}
+                action="https://send.pageclip.co/EYBS2o1KUM6lnVRgltswixebomMl9g6M"
+                method="POST"
+                target="hidden_iframe"
+                onSubmit={handleFormSubmit}
+                className="space-y-6"
+              >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-2">
@@ -201,7 +186,6 @@ const ContactSection: React.FC = () => {
                     />
                   </div>
                 </div>
-
                 <div>
                   <label htmlFor="subject" className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-2">
                     Subject *
@@ -214,10 +198,9 @@ const ContactSection: React.FC = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-neutral-300 dark:border-neutral-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-neutral-700 text-neutral-900 dark:text-white"
-                    placeholder="What&apos;s this about?"
+                    placeholder="What's this about?"
                   />
                 </div>
-
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-2">
                     Message *
@@ -233,24 +216,20 @@ const ContactSection: React.FC = () => {
                     placeholder="Tell me about your project or inquiry..."
                   />
                 </div>
-
                 <button
                   type="submit"
-                  disabled={isSubmitting}
-                  className="w-full px-6 py-3 bg-primary hover:bg-primary-dark disabled:bg-primary-light text-white rounded-lg transition-colors duration-300 flex items-center justify-center"
+                  className="w-full px-6 py-3 bg-primary hover:bg-primary-dark text-white rounded-lg transition-colors duration-300 flex items-center justify-center"
                 >
-                  {isSubmitting ? (
-                    <>
-                      <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
-                      Sending...
-                    </>
-                  ) : (
-                    <>
-                      <Send size={20} className="mr-2" />
-                      Send Message
-                    </>
-                  )}
+                  <span className="flex items-center">
+                    <Send size={20} className="mr-2" />
+                    Send Message
+                  </span>
                 </button>
+                <iframe
+                  name="hidden_iframe"
+                  style={{ display: 'none' }}
+                  onLoad={handleIframeLoad}
+                />
               </form>
             </div>
           </div>
