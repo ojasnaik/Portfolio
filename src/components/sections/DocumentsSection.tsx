@@ -12,7 +12,7 @@ const DocumentsSection: React.FC = () => {
   const documents = [
     {
       id: 1,
-      title: "Bachelor's Degree in Computer Science",
+      title: "Bachelor&apos;s Degree in Computer Science",
       description: "University of California, Berkeley - 2019",
       type: "Education",
       icon: <FileText size={24} />,

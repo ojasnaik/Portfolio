@@ -198,7 +198,7 @@ const ContactSection: React.FC = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-neutral-300 dark:border-neutral-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-neutral-700 text-neutral-900 dark:text-white"
-                    placeholder="What's this about?"
+                    placeholder="What&apos;s this about?"
                   />
                 </div>
                 <div>

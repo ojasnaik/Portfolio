@@ -23,13 +23,13 @@ const AboutSection: React.FC = () => {
               My Journey
             </h3>
             <p className="text-neutral-600 dark:text-neutral-400 mb-4">
-              I kicked off my tech journey with a Bachelor's in Computer Engineering from COEP, with an internship at 
+              I kicked off my tech journey with a Bachelor&apos;s in Computer Engineering from COEP, with an internship at 
               <span> </span><a href="https://www.mastercard.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary dark:hover:text-primary-light">Mastercard</a>, 
               then dove into the industry with roles at <span> </span>
               <a href="https://www.ideas.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary dark:hover:text-primary-light">IDeaS Revenue Solutions</a> , and 
               <span> </span><a href="https://www.amdocs.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary dark:hover:text-primary-light">Amdocs</a>, where I built everything from distributed backend systems to full-stack applications. 
-              Wanting to deepen my expertise, I pursued a Master's in Computer Science at San Jose State University, graduating with a 4.0 GPA. Most recently, I interned at 
-              <span> </span><a href="https://www.foundrydigital.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary dark:hover:text-primary-light">Foundry Digital</a>, working on full-stack tools in the crypto infrastructure space. Along the way, I've picked up a love for clean architecture, real-time systems, and learning whatever new tech the job throws at me.
+              Wanting to deepen my expertise, I pursued a Master&apos;s in Computer Science at San Jose State University, graduating with a 4.0 GPA. Most recently, I interned at 
+              <span> </span><a href="https://www.foundrydigital.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary dark:hover:text-primary-light">Foundry Digital</a>, working on full-stack tools in the crypto infrastructure space. Along the way, I&apos;ve picked up a love for clean architecture, real-time systems, and learning whatever new tech the job throws at me.
             </p>
             <div className="grid grid-cols-2 gap-6">
               <div className="flex items-start">
@@ -88,7 +88,7 @@ const AboutSection: React.FC = () => {
             <div className="relative z-10 w-full max-w-xs md:max-w-sm aspect-[3/4] rounded-lg shadow-xl overflow-hidden mx-auto">
               <Image 
                 src="/IMG_8184.jpg"
-                alt="Graduating with my master's degree"
+                alt="Graduating with my master&apos;s degree"
                 fill
                 className="object-contain"
               />
