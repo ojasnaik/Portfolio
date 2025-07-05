@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${project.title} | Ojas`,
-    description: project.description,
+    description: Array.isArray(project.description) ? project.description.join(' ') : project.description,
   }
 }
 
