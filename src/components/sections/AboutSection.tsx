@@ -85,12 +85,12 @@ const AboutSection: React.FC = () => {
           <div className="relative">
             <div className="absolute -top-6 -left-6 w-24 h-24 bg-primary-light/20 dark:bg-primary-dark/20 rounded-lg z-0"></div>
             <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-secondary-light/20 dark:bg-secondary-dark/20 rounded-lg z-0"></div>
-            <div className="relative z-10 w-full h-96 rounded-lg shadow-xl overflow-hidden">
+            <div className="relative z-10 w-full max-w-xs md:max-w-sm aspect-[3/4] rounded-lg shadow-xl overflow-hidden mx-auto">
               <Image 
-                src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-                alt="Working on a project" 
+                src="/IMG_8184.jpg"
+                alt="Graduating with my master's degree"
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
           </div>

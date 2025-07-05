@@ -32,16 +32,30 @@ const ProjectsSection: React.FC = () => {
                     {project.title}
                   </h3>
                 </Link>
-                <p className="text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-3">{project.description}</p>
+                <ul className="text-neutral-600 dark:text-neutral-400 mb-4 list-disc list-inside space-y-1">
+                  {project.description.map((point, idx) => (
+                    <li key={idx}>{point}</li>
+                  ))}
+                </ul>
                 {project.githubLink && (
                   <a 
                     href={project.githubLink} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-primary dark:text-primary-light hover:text-primary-dark dark:hover:text-primary font-medium mt-2"
+                    className="inline-flex items-center text-primary dark:text-primary-light hover:text-primary-dark dark:hover:text-primary font-medium mt-2 mr-4"
                   >
                     View Code <Github size={16} className="ml-2" />
                   </a>
+                )}
+                {project.colabLink && (
+                  <a
+                    href={project.colabLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-primary dark:text-primary-light hover:text-primary-dark dark:hover:text-primary font-medium mt-2 mr-4"
+                    style={{ marginLeft: project.githubLink ? '0' : undefined }}
+                  >
+                     View Code <Github size={16} className="ml-2" />                  </a>
                 )}
               </div>
             </div>

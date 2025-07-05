@@ -45,7 +45,7 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="text-xl font-bold text-neutral-900 dark:text-white">
-          {config.name}
+          {/* {config.name} */}
         </Link>
 
         {/* Desktop Navigation */}

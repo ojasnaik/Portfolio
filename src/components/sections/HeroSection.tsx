@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react'
+import { SiLeetcode } from 'react-icons/si'
 import { config } from '@/lib/config'
 
 const HeroSection: React.FC = () => {
@@ -14,8 +15,8 @@ const HeroSection: React.FC = () => {
       
       <div className="container mx-auto px-4 z-10">
         <div className="flex flex-col md:flex-row items-center">
-          <div className="w-full md:w-3/5 text-center md:text-left mb-10 md:mb-0">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 dark:text-white mb-4 tracking-tight animate-fade-in">
+          <div className="w-full md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+            <h1 className="pt-8 text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 dark:text-white mb-4 tracking-tight animate-fade-in">
               <span className="text-primary dark:text-primary-light">Hello, I&apos;m</span> <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary dark:from-primary-light dark:to-secondary-light">
                 Ojas
@@ -28,13 +29,37 @@ const HeroSection: React.FC = () => {
             I have over 4 years of experience building scalable, distributed systems in fast-paced Agile environments. Proven track record developing microservices and full-stack applications using Java, Kotlin, Python, Spring Boot, React, Kafka, ElasticSearch, SQL, and NoSQL databases. Skilled in designing secure REST APIs, implementing real-time data pipelines, and integrating observability tools like OpenTelemetry and Prometheus. Hands-on with CI/CD, Jenkins, Docker, Kubernetes, and AWS-based deployments. Passionate about clean code, test-driven development, and delivering reliable software at scale.
             </p>
             <div className="mb-8 animate-fade-in animation-delay-300">
-              <h3 className="text-lg font-semibold text-neutral-900 dark:text-white mb-2">Professional Experience</h3>
-              <ul className="text-neutral-600 dark:text-neutral-400 text-sm space-y-1">
-                <li><strong>Foundry Digital</strong> (Software Engineer Intern, 2024): Kotlin, React, AWS, Docker, CI/CD, microservices.</li>
-                <li><strong>Amdocs</strong> (Software Engineer, 2021-2023): Java, Spring Boot, Kafka, Postgres, OpenTelemetry, Kubernetes, CI/CD.</li>
-                <li><strong>IDeaS Revenue Solutions</strong> (Associate Software Developer, 2019-2020): Django, Celery, Kafka, Spark, React, AWS.</li>
-                <li><strong>Mastercard</strong> (Software Engineer Intern, 2018): Java, Zookeeper, distributed systems.</li>
-              </ul>
+              <h3 className="text-lg font-semibold text-neutral-900 dark:text-white mb-4">Professional Experience</h3>
+              <div className="space-y-6">
+                {/* Foundry Digital */}
+                <div>
+                  <div className="text-xl md:text-2xl font-bold text-primary dark:text-primary-light">Foundry Digital</div>
+                  <a href="https://www.foundrydigital.com" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">Company Website</a>
+                  <div className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">May 2024 - Aug 2024 &bull; 4 months</div>
+                  <div className="text-sm text-neutral-700 dark:text-neutral-300 mt-1">Kotlin, Spring Boot,React, AWS, Docker, CI/CD, microservices</div>
+                </div>
+                {/* Amdocs */}
+                <div>
+                  <div className="text-xl md:text-2xl font-bold text-primary dark:text-primary-light">Amdocs</div>
+                  <a href="https://www.amdocs.com" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">Company Website</a>
+                  <div className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">June 2021 - June 2023 &bull; 2 years</div>
+                  <div className="text-sm text-neutral-700 dark:text-neutral-300 mt-1">Java, Spring Boot, Kafka, Postgres, OpenTelemetry, Kubernetes, CI/CD</div>
+                </div>
+                {/* IDeaS Revenue Solutions */}
+                <div>
+                  <div className="text-xl md:text-2xl font-bold text-primary dark:text-primary-light">IDeaS Revenue Solutions</div>
+                  <a href="https://www.ideas.com" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">Company Website</a>
+                  <div className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">June 2019 - Dec 2020 &bull; 1.5 years</div>
+                  <div className="text-sm text-neutral-700 dark:text-neutral-300 mt-1">Python, Django, Celery, Kafka, Spark, React, AWS</div>
+                </div>
+                {/* Mastercard */}
+                <div>
+                  <div className="text-xl md:text-2xl font-bold text-primary dark:text-primary-light">Mastercard</div>
+                  <a href="https://www.mastercard.com" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">Company Website</a>
+                  <div className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">May 2018 - July 2018 &bull; 3 months</div>
+                  <div className="text-sm text-neutral-700 dark:text-neutral-300 mt-1">Java, Zookeeper, distributed systems</div>
+                </div>
+              </div>
             </div>
             <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-8 animate-fade-in animation-delay-300">
               <Link 
@@ -71,6 +96,15 @@ const HeroSection: React.FC = () => {
                 <Linkedin size={20} />
               </a>
               <a 
+                href={config.socials.leetcode}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-full bg-neutral-200 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-300 dark:hover:bg-neutral-700 transition-colors"
+                aria-label="LeetCode"
+              >
+                <SiLeetcode size={20} />
+              </a>
+              <a 
                 href={`mailto:${config.email}`}
                 className="p-2 rounded-full bg-neutral-200 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-300 dark:hover:bg-neutral-700 transition-colors"
                 aria-label="Email"
@@ -79,10 +113,10 @@ const HeroSection: React.FC = () => {
               </a>
             </div>
           </div>
-          <div className="w-full md:w-2/5 flex justify-center md:justify-end animate-fade-in animation-delay-200">
-            <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-neutral-800 shadow-xl relative">
+          <div className="w-full md:w-1/2 flex justify-center md:justify-end animate-fade-in animation-delay-200">
+            <div className="w-72 h-72 md:w-[28rem] md:h-[28rem] rounded-full overflow-hidden border-4 border-white dark:border-neutral-800 shadow-xl relative md:ml-[-5rem]">
               <Image 
-                src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                src="/IMG_6272.jpg"
                 alt={`Headshot of ${config.name}`}
                 fill
                 className="object-cover"
