@@ -36,7 +36,7 @@ const HeroSection: React.FC = () => {
                   <div className="text-xl md:text-2xl font-bold text-primary dark:text-primary-light">Foundry Digital</div>
                   <a href="https://www.foundrydigital.com" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">Company Website</a>
                   <div className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">May 2024 - Aug 2024 &bull; 4 months</div>
-                  <div className="text-sm text-neutral-700 dark:text-neutral-300 mt-1">Kotlin, Spring Boot,React, AWS, Docker, CI/CD, microservices</div>
+                  <div className="text-sm text-neutral-700 dark:text-neutral-300 mt-1">Kotlin, Spring Boot, React, AWS, Docker, CI/CD, microservices</div>
                 </div>
                 {/* Amdocs */}
                 <div>
