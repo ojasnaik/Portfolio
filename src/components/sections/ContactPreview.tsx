@@ -33,8 +33,8 @@ const ContactPreview: React.FC = () => {
               <Phone size={24} />
             </div>
             <h3 className="text-lg font-semibold text-neutral-900 dark:text-white mb-2">Phone</h3>
-            <a href="tel:+16699779557" className="text-neutral-600 dark:text-neutral-400 hover:text-primary dark:hover:text-primary-light">
-              +1 (669) 977-9557
+            <a href="tel:+16829908617" className="text-neutral-600 dark:text-neutral-400 hover:text-primary dark:hover:text-primary-light">
+              +1 (682) 990-8617
             </a>
           </div>
           
