@@ -47,8 +47,7 @@ const ContactSection: React.FC = () => {
           </h1>
           <div className="w-20 h-1 bg-primary dark:bg-primary-light mx-auto mb-6"></div>
           <p className="text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
-            Have a project in mind or want to collaborate? I&apos;d love to hear from you. 
-            Let&apos;s discuss how we can work together to bring your ideas to life.
+            Are you a recruiter or hiring manager with a job opportunity, or looking to collaborate on an exciting project? I&apos;m open to new roles, contract work, and innovative partnerships. Let&apos;s connect and explore how I can contribute to your team or project.
           </p>
         </div>
 
@@ -213,7 +212,7 @@ const ContactSection: React.FC = () => {
                     required
                     rows={6}
                     className="w-full px-4 py-3 border border-neutral-300 dark:border-neutral-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-neutral-700 text-neutral-900 dark:text-white resize-none"
-                    placeholder="Tell me about your project or inquiry..."
+                    placeholder="Share details about your job opportunity, project, or how you'd like to collaborate..."
                   />
                 </div>
                 <button
