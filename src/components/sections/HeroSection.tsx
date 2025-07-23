@@ -26,7 +26,7 @@ const HeroSection: React.FC = () => {
               Software Engineer
             </h2>
             <p className="text-neutral-600 dark:text-neutral-400 text-sm md:text-base mb-4 max-w-2xl mx-auto md:mx-0 leading-snug animate-fade-in animation-delay-200">
-            I have over 4 years of experience building scalable, distributed systems in fast-paced Agile environments. Proven track record developing microservices and full-stack applications using Java, Kotlin, Python, Spring Boot, React, Kafka, ElasticSearch, SQL, and NoSQL databases. Skilled in designing secure REST APIs, implementing real-time data pipelines, and integrating observability tools like OpenTelemetry and Prometheus. Hands-on with CI/CD, Jenkins, Docker, Kubernetes, and AWS-based deployments. Passionate about clean code, test-driven development, and delivering reliable software at scale.
+            I have 5 years of experience building scalable, distributed systems in fast-paced Agile environments. Proven track record developing microservices and full-stack applications using Java, Kotlin, Python, Spring Boot, React, Kafka, ElasticSearch, SQL, and NoSQL databases. Skilled in designing secure REST APIs, implementing real-time data pipelines, and integrating observability tools like OpenTelemetry and Prometheus. Hands-on with CI/CD, Jenkins, Docker, Kubernetes, and AWS-based deployments. Passionate about clean code, test-driven development, and delivering reliable software at scale.
             </p>
             <div className="mb-8 animate-fade-in animation-delay-300">
               <h3 className="text-lg font-semibold text-neutral-900 dark:text-white mb-4 underline">Professional Experience</h3>
