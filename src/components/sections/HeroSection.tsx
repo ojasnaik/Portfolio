@@ -39,6 +39,7 @@ const HeroSection: React.FC = () => {
                   {/* Amdocs */}
                   <div>
                     <div className="text-xl md:text-2xl font-bold text-primary dark:text-primary-light">Amdocs</div>
+                    <div className="text-lg font-semibold text-neutral-900 dark:text-white">Software Engineer</div>
                     <a href="https://www.amdocs.com" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">Company Website</a>
                     <div className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">June 2021 - June 2023 &bull; 2 years</div>
                     <div className="text-sm text-neutral-700 dark:text-neutral-300 mt-1">Java, Spring Boot, Kafka, Postgres, OpenTelemetry, Kubernetes, CI/CD</div>
@@ -46,8 +47,9 @@ const HeroSection: React.FC = () => {
                   {/* IDeaS Revenue Solutions */}
                   <div>
                     <div className="text-xl md:text-2xl font-bold text-primary dark:text-primary-light">IDeaS Revenue Solutions</div>
+                    <div className="text-lg font-semibold text-neutral-900 dark:text-white">Associate Software Engineer</div>
                     <a href="https://www.ideas.com" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">Company Website</a>
-                    <div className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">June 2019 - Dec 2020 &bull; 1.5 years</div>
+                    <div className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">June 2019 - May 2021 &bull; 2 years</div>
                     <div className="text-sm text-neutral-700 dark:text-neutral-300 mt-1">Python, Django, Celery, Kafka, Spark, React, AWS</div>
                   </div>
                 </div>
@@ -61,6 +63,7 @@ const HeroSection: React.FC = () => {
                   {/* Foundry Digital */}
                   <div>
                     <div className="text-xl md:text-2xl font-bold text-primary dark:text-primary-light">Foundry Digital</div>
+                    <div className="text-lg font-semibold text-neutral-900 dark:text-white">Software Engineer Intern</div>
                     <a href="https://www.foundrydigital.com" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">Company Website</a>
                     <div className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">May 2024 - Aug 2024 &bull; 4 months</div>
                     <div className="text-sm text-neutral-700 dark:text-neutral-300 mt-1">Kotlin, Spring Boot, React, AWS, Docker, CI/CD, microservices</div>
@@ -68,9 +71,10 @@ const HeroSection: React.FC = () => {
                   {/* Mastercard */}
                   <div>
                     <div className="text-xl md:text-2xl font-bold text-primary dark:text-primary-light">Mastercard</div>
+                    <div className="text-lg font-semibold text-neutral-900 dark:text-white">Software Engineer Intern</div>
                     <a href="https://www.mastercard.com" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">Company Website</a>
-                    <div className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">May 2018 - July 2018 &bull; 3 months</div>
-                    <div className="text-sm text-neutral-700 dark:text-neutral-300 mt-1">Java, Zookeeper, distributed systems</div>
+                    <div className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">May 2018 - Dec 2018 &bull; 8 months</div>
+                    <div className="text-sm text-neutral-700 dark:text-neutral-300 mt-1">Java, JavaScript, Zookeeper, HTML, CSS, Bootstrap, jQuery, MySQL</div>
                   </div>
                 </div>
               </div>
