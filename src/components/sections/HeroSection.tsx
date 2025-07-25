@@ -14,7 +14,7 @@ const HeroSection: React.FC = () => {
       </div>
       
       <div className="container mx-auto px-4 z-10">
-        <div className="flex flex-col md:flex-row items-center">
+        <div className="flex flex-col-reverse md:flex-row items-center">
           <div className="w-full md:w-1/2 text-center md:text-left mb-10 md:mb-0">
             <h1 className="pt-8 text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 dark:text-white mb-4 tracking-tight animate-fade-in">
               <span className="text-primary dark:text-primary-light">Hello, I&apos;m Ojas</span> <br />
@@ -30,51 +30,53 @@ const HeroSection: React.FC = () => {
             </p>
             <div className="mb-8 animate-fade-in animation-delay-300">
               <h3 className="text-lg font-semibold text-neutral-900 dark:text-white mb-4 underline">Professional Experience</h3>
-              {/* Full-Time Section */}
-              <div className="mb-6">
-                <h4 className="text-lg font-bold italic text-white mb-3">
-                  Full-Time:
-                </h4>
-                <div className="space-y-6">
-                  {/* Amdocs */}
-                  <div>
-                    <div className="text-xl md:text-2xl font-bold text-primary dark:text-primary-light">Amdocs</div>
-                    <div className="text-lg font-semibold text-neutral-900 dark:text-white">Software Engineer</div>
-                    <a href="https://www.amdocs.com" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">Company Website</a>
-                    <div className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">June 2021 - June 2023 &bull; 2 years</div>
-                    <div className="text-sm text-neutral-700 dark:text-neutral-300 mt-1">Java, Spring Boot, Kafka, Postgres, OpenTelemetry, Kubernetes, CI/CD</div>
-                  </div>
-                  {/* IDeaS Revenue Solutions */}
-                  <div>
-                    <div className="text-xl md:text-2xl font-bold text-primary dark:text-primary-light">IDeaS Revenue Solutions</div>
-                    <div className="text-lg font-semibold text-neutral-900 dark:text-white">Associate Software Engineer</div>
-                    <a href="https://www.ideas.com" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">Company Website</a>
-                    <div className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">June 2019 - May 2021 &bull; 2 years</div>
-                    <div className="text-sm text-neutral-700 dark:text-neutral-300 mt-1">Python, Django, Celery, Kafka, Spark, React, AWS</div>
+              <div className="flex flex-col md:flex-row gap-8">
+                {/* Full-Time Section */}
+                <div className="w-full md:w-1/2 mb-6 md:mb-0">
+                  <h4 className="text-lg font-bold italic text-white mb-3">
+                    Full-Time:
+                  </h4>
+                  <div className="space-y-6">
+                    {/* Amdocs */}
+                    <div>
+                      <div className="text-xl md:text-2xl font-bold text-primary dark:text-primary-light">Amdocs</div>
+                      <div className="text-lg font-semibold text-neutral-900 dark:text-white">Software Engineer</div>
+                      <a href="https://www.amdocs.com" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">Company Website</a>
+                      <div className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">June 2021 - June 2023 &bull; 2 years</div>
+                      <div className="text-sm text-neutral-700 dark:text-neutral-300 mt-1">Java, Spring Boot, Kafka, Postgres, OpenTelemetry, Kubernetes, CI/CD</div>
+                    </div>
+                    {/* IDeaS Revenue Solutions */}
+                    <div>
+                      <div className="text-xl md:text-2xl font-bold text-primary dark:text-primary-light">IDeaS Revenue Solutions</div>
+                      <div className="text-lg font-semibold text-neutral-900 dark:text-white">Associate Software Engineer</div>
+                      <a href="https://www.ideas.com" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">Company Website</a>
+                      <div className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">June 2019 - May 2021 &bull; 2 years</div>
+                      <div className="text-sm text-neutral-700 dark:text-neutral-300 mt-1">Python, Django, Celery, Kafka, Spark, React, AWS</div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              {/* Internship Section */}
-              <div>
-                <h4 className="text-lg font-bold italic text-white mb-3">
-                  Internships:
-                </h4>
-                <div className="space-y-6">
-                  {/* Foundry Digital */}
-                  <div>
-                    <div className="text-xl md:text-2xl font-bold text-primary dark:text-primary-light">Foundry Digital</div>
-                    <div className="text-lg font-semibold text-neutral-900 dark:text-white">Software Engineer Intern</div>
-                    <a href="https://www.foundrydigital.com" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">Company Website</a>
-                    <div className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">May 2024 - Aug 2024 &bull; 4 months</div>
-                    <div className="text-sm text-neutral-700 dark:text-neutral-300 mt-1">Kotlin, Spring Boot, React, AWS, Docker, CI/CD, microservices</div>
-                  </div>
-                  {/* Mastercard */}
-                  <div>
-                    <div className="text-xl md:text-2xl font-bold text-primary dark:text-primary-light">Mastercard</div>
-                    <div className="text-lg font-semibold text-neutral-900 dark:text-white">Software Engineer Intern</div>
-                    <a href="https://www.mastercard.com" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">Company Website</a>
-                    <div className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">May 2018 - Dec 2018 &bull; 8 months</div>
-                    <div className="text-sm text-neutral-700 dark:text-neutral-300 mt-1">Java, JavaScript, Zookeeper, HTML, CSS, Bootstrap, jQuery, MySQL</div>
+                {/* Internship Section */}
+                <div className="w-full md:w-1/2">
+                  <h4 className="text-lg font-bold italic text-white mb-3">
+                    Internships:
+                  </h4>
+                  <div className="space-y-6">
+                    {/* Foundry Digital */}
+                    <div>
+                      <div className="text-xl md:text-2xl font-bold text-primary dark:text-primary-light">Foundry Digital</div>
+                      <div className="text-lg font-semibold text-neutral-900 dark:text-white">Software Engineer Intern</div>
+                      <a href="https://www.foundrydigital.com" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">Company Website</a>
+                      <div className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">May 2024 - Aug 2024 &bull; 4 months</div>
+                      <div className="text-sm text-neutral-700 dark:text-neutral-300 mt-1">Kotlin, Spring Boot, React, AWS, Docker, CI/CD, microservices</div>
+                    </div>
+                    {/* Mastercard */}
+                    <div>
+                      <div className="text-xl md:text-2xl font-bold text-primary dark:text-primary-light">Mastercard</div>
+                      <div className="text-lg font-semibold text-neutral-900 dark:text-white">Software Engineer Intern</div>
+                      <a href="https://www.mastercard.com" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">Company Website</a>
+                      <div className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">May 2018 - Dec 2018 &bull; 8 months</div>
+                      <div className="text-sm text-neutral-700 dark:text-neutral-300 mt-1">Java, JavaScript, Zookeeper, HTML, CSS, Bootstrap, jQuery, MySQL</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -132,7 +134,7 @@ const HeroSection: React.FC = () => {
             </div>
           </div>
           <div className="w-full md:w-1/2 flex justify-center md:justify-end animate-fade-in animation-delay-200">
-            <div className="w-80 h-80 md:w-[32rem] md:h-[32rem] rounded-full overflow-hidden border-4 border-white dark:border-neutral-800 shadow-xl relative md:ml-[-5rem] -mt-16">
+            <div className="w-80 h-80 md:w-[32rem] md:h-[32rem] rounded-full overflow-hidden border-4 border-white dark:border-neutral-800 shadow-xl relative md:ml-[-5rem] -mt-8 md:-mt-24">
               <Image 
                 src="/IMG_6272.jpg"
                 alt={`Headshot of ${config.name}`}
