@@ -29,11 +29,11 @@ const HeroSection: React.FC = () => {
             I have 5 years of experience building scalable, distributed systems in fast-paced Agile environments. Proven track record developing microservices and full-stack applications using Java, Kotlin, Python, Spring Boot, React, Kafka, ElasticSearch, SQL, and NoSQL databases. Skilled in designing secure REST APIs, implementing real-time data pipelines, and integrating observability tools like OpenTelemetry and Prometheus. Hands-on with CI/CD, Jenkins, Docker, Kubernetes, and AWS-based deployments. Passionate about clean code, test-driven development, and delivering reliable software at scale.
             </p>
             <div className="mb-8 animate-fade-in animation-delay-300">
-              <h3 className="text-lg font-semibold text-neutral-900 dark:text-white mb-4 underline">Professional Experience</h3>
+              <h3 className="text-xl font-semibold text-neutral-900 dark:text-white mb-4 underline">Professional Experience</h3>
               <div className="flex flex-col md:flex-row gap-8">
                 {/* Full-Time Section */}
                 <div className="w-full md:w-1/2 mb-6 md:mb-0">
-                  <h4 className="text-lg font-bold italic text-white mb-3">
+                  <h4 className="text-lg font-bold italic text-neutral-900 dark:text-white mb-3">
                     Full-Time:
                   </h4>
                   <div className="space-y-6">
@@ -57,7 +57,7 @@ const HeroSection: React.FC = () => {
                 </div>
                 {/* Internship Section */}
                 <div className="w-full md:w-1/2">
-                  <h4 className="text-lg font-bold italic text-white mb-3">
+                  <h4 className="text-lg font-bold italic text-neutral-900 dark:text-white mb-3">
                     Internships:
                   </h4>
                   <div className="space-y-6">
@@ -134,7 +134,7 @@ const HeroSection: React.FC = () => {
             </div>
           </div>
           <div className="w-full md:w-1/2 flex justify-center md:justify-end animate-fade-in animation-delay-200">
-            <div className="w-80 h-80 md:w-[32rem] md:h-[32rem] rounded-full overflow-hidden border-4 border-white dark:border-neutral-800 shadow-xl relative md:ml-[-5rem] -mt-8 md:-mt-24">
+            <div className="w-48 h-48 md:w-80 md:h-80 lg:w-[28rem] lg:h-[28rem] rounded-full overflow-hidden border-4 border-white dark:border-neutral-800 shadow-xl relative md:ml-[-5rem] mt-0 md:-mt-24">
               <Image 
                 src="/IMG_6272.jpg"
                 alt={`Headshot of ${config.name}`}
