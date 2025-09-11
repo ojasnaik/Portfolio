@@ -81,6 +81,22 @@ const HeroSection: React.FC = () => {
                 </div>
               </div>
             </div>
+            <div className="mb-8 animate-fade-in animation-delay-300">
+              <h3 className="text-xl font-semibold text-neutral-900 dark:text-white mb-4 underline">Certifications</h3>
+              <div className="space-y-2">
+                <div>
+                  <div className="text-lg font-semibold text-neutral-900 dark:text-white">AWS Certified Developer - Associate</div>
+                  <a
+                    href="https://www.credly.com/badges/17461a33-5fca-45a4-a5f6-48ccffc8fd0c/public_url"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300"
+                  >
+                    View Credential
+                  </a>
+                </div>
+              </div>
+            </div>
             <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-8 animate-fade-in animation-delay-300">
               <Link 
                 href="/contact" 
