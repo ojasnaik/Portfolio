@@ -2,6 +2,16 @@ import React from 'react';
 
 const experienceData = [
   {
+    company: 'San Jose State University',
+    location: 'San Jose, CA, USA',
+    title: 'Software Engineer, Research',
+    period: 'August 2025 - Present',
+    bullets: [
+      'Deployed web applications on AWS integrating LLM services with LangChain and RAG pipelines to enable reasoning and automations.',
+      'Applied PEFT methods (LoRA, prompt tuning) with reward modeling and RLHF to fine-tune and align LLMs to reduce toxicity.'
+    ]
+  },
+  {
     company: 'Foundry Digital',
     location: 'Rochester, NY, USA',
     title: 'Software Engineer Intern',

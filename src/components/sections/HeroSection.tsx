@@ -37,6 +37,14 @@ const HeroSection: React.FC = () => {
                     Full-Time:
                   </h4>
                   <div className="space-y-6">
+                    {/* San Jose State University */}
+                    <div>
+                      <div className="text-xl md:text-2xl font-bold text-primary dark:text-primary-light">San Jose State University</div>
+                      <div className="text-lg font-semibold text-neutral-900 dark:text-white">Software Engineer, Research</div>
+                      <a href="https://www.sjsu.edu" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">Company Website</a>
+                      <div className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">August 2025 - Present</div>
+                      <div className="text-sm text-neutral-700 dark:text-neutral-300 mt-1">AWS, LangChain, RAG, PEFT, LoRA, RLHF, LLM Fine-tuning</div>
+                    </div>
                     {/* Amdocs */}
                     <div>
                       <div className="text-xl md:text-2xl font-bold text-primary dark:text-primary-light">Amdocs</div>
@@ -95,7 +103,18 @@ const HeroSection: React.FC = () => {
                     View Credential
                   </a>
                 </div>
-              </div>
+                <div>
+                  <div className="text-lg font-semibold text-neutral-900 dark:text-white">Generative AI with Large Language Models</div>
+                  <a
+                    href="https://www.coursera.org/account/accomplishments/verify/GSR0U2FSZSM6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300"
+                  >
+                    View Credential
+                  </a>
+                </div>
+              </div>              
             </div>
             <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-8 animate-fade-in animation-delay-300">
               <Link 
