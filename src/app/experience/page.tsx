@@ -7,8 +7,8 @@ const experienceData = [
     title: 'Software Engineer, Research',
     period: 'August 2025 - Present',
     bullets: [
-      'Deployed web applications on AWS integrating LLM services with LangChain and RAG pipelines to enable reasoning and automations.',
-      'Applied PEFT methods (LoRA, prompt tuning) with reward modeling and RLHF to fine-tune and align LLMs to reduce toxicity.'
+      'Enabled context-aware support in a Python web app for solo caregivers by integrating fine-tuned models using LangChain and RAG.',
+      'Applied PEFT methods (LoRA, prompt tuning) with reward modeling and RLHF on AWS SageMaker to fine-tune and align LLMs.'
     ]
   },
   {
@@ -17,9 +17,9 @@ const experienceData = [
     title: 'Software Engineer Intern',
     period: 'May 2024 - August 2024',
     bullets: [
-      'Built a fee-rate control module using Kotlin and React with Material UI, enabling 80% faster client onboarding and contract reconfiguration.',
-      'Automated code coverage reporting for 5 microservices via Python CI script and JFrog, reducing biweekly operational effort by 20%.',
-      'Integrated containerization via Docker and deployed services through AWS ECS on Fargate, enhancing CI/CD efficiency.'
+      'Built a fee-rate control module and an MCP server tool for agentic AI, enabling 80% faster client onboarding and contract reconfiguration.',
+      'Automated code coverage reporting for 5 microservices via CI script and JFrog artifactory, reducing biweekly operational effort by 20%.',
+      'Integrated containerization via Docker and deployed Java(Spring Boot) services through AWS ECS on Fargate with Cloudwatch monitoring.'
     ]
   },
   {
