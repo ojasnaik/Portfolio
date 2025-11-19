@@ -26,7 +26,7 @@ const HeroSection: React.FC = () => {
               Software Engineer
             </h2>
             <p className="text-neutral-600 dark:text-neutral-400 text-sm md:text-base mb-4 max-w-2xl mx-auto md:mx-0 leading-snug animate-fade-in animation-delay-200">
-            I have 5 years of experience building scalable, distributed systems in fast-paced Agile environments. Proven track record developing microservices and full-stack applications using Java, Kotlin, Python, Spring Boot, React, Kafka, ElasticSearch, SQL, and NoSQL databases, plus LLMs (LangChain/RAG) and agentic AI with MCP servers. Skilled in designing secure REST APIs, implementing real-time data pipelines, and integrating observability tools like OpenTelemetry and Prometheus. Hands-on with CI/CD, Jenkins, Docker, Kubernetes, and AWS-based deployments. Passionate about clean code, test-driven development, and delivering reliable software at scale.
+            I have 4+ years of experience building scalable, distributed systems in fast-paced Agile environments. Proven track record developing microservices and full-stack applications using Java, Kotlin, Python, Spring Boot, React, Kafka, ElasticSearch, SQL, and NoSQL databases, plus LLMs (LangChain/RAG) and agentic AI with MCP servers. Skilled in designing secure REST APIs, implementing real-time data pipelines, and integrating observability tools like OpenTelemetry and Prometheus. Hands-on with CI/CD, Jenkins, Docker, Kubernetes, and AWS-based deployments. Passionate about clean code, test-driven development, and delivering reliable software at scale.
             </p>
             <div className="mb-8 animate-fade-in animation-delay-300">
               <h3 className="text-xl font-semibold text-neutral-900 dark:text-white mb-4 underline">Professional Experience</h3>
@@ -58,7 +58,7 @@ const HeroSection: React.FC = () => {
                       <div className="text-xl md:text-2xl font-bold text-primary dark:text-primary-light">IDeaS Revenue Solutions</div>
                       <div className="text-lg font-semibold text-neutral-900 dark:text-white">Associate Software Engineer</div>
                       <a href="https://www.ideas.com" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">Company Website</a>
-                      <div className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">June 2019 - May 2021 &bull; 2 years</div>
+                      <div className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">June 2019 - Dec 2020 &bull; 1.5 years</div>
                       <div className="text-sm text-neutral-700 dark:text-neutral-300 mt-1">Python, Django, Celery, Kafka, Spark, React, AWS</div>
                     </div>
                   </div>
@@ -82,7 +82,7 @@ const HeroSection: React.FC = () => {
                       <div className="text-xl md:text-2xl font-bold text-primary dark:text-primary-light">Mastercard</div>
                       <div className="text-lg font-semibold text-neutral-900 dark:text-white">Software Engineer Intern</div>
                       <a href="https://www.mastercard.com" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">Company Website</a>
-                      <div className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">May 2018 - Dec 2018 &bull; 8 months</div>
+                      <div className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">May 2018 - Jul 2018 &bull; 8 months</div>
                       <div className="text-sm text-neutral-700 dark:text-neutral-300 mt-1">Java, JavaScript, Zookeeper, HTML, CSS, Bootstrap, jQuery, MySQL</div>
                     </div>
                   </div>

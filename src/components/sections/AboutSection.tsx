@@ -64,7 +64,7 @@ const AboutSection: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-neutral-900 dark:text-white mb-1">Experience</h4>
-                  <p className="text-neutral-600 dark:text-neutral-400">5 Years</p>
+                  <p className="text-neutral-600 dark:text-neutral-400">4.5 Years</p>
                 </div>
               </div>
               

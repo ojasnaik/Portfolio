@@ -41,7 +41,7 @@ const experienceData = [
     company: 'IDeaS Revenue Solutions',
     location: 'Pune, MH, India',
     title: 'Associate Software Engineer',
-    period: 'June 2019 - May 2021',
+    period: 'June 2019 - December 2020',
     bullets: [
       'Designed a Continuous Pricing system with Django and Celery, enabling Hilton revenue managers to make pricing decisions twice as fast.',
       'Built a pricing pipeline using Kafka, Spark Streaming, Redis, and Hadoop for real-time updates and historical insights on 50+ competitors.',
@@ -54,7 +54,7 @@ const experienceData = [
     company: 'Mastercard',
     location: 'Pune, MH, India',
     title: 'Software Engineer Intern',
-    period: 'May 2018 - December 2018',
+    period: 'May 2018 - July 2018',
     bullets: [
       'Built distributed file management into internal test tools using Java and Zookeeper, automating 1 hr of daily QA effort',
       'Developed responsive web UIs for test tools using HTML, CSS, JavaScript, Bootstrap, and jQuery to streamline test execution and setup',
